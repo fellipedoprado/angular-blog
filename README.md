@@ -1,27 +1,54 @@
-# AngularBlog
+# 📰 NerdPress
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Um projeto de blog desenvolvido em Angular, inspirado em um layout do Dribbble. Ideal para exibir notícias, artigos e conteúdos com foco em responsividade e organização.
 
-## Development server
+## 🔧 Melhorias e Evoluções
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este projeto foi originalmente baseado no repositório [`felipeAguiarCode/angular-blog`](https://github.com/felipeAguiarCode/angular-blog), e a partir dele foram feitas as seguintes melhorias:
 
-## Code scaffolding
+- Expansão da estrutura de dados com:
+  - Autor, data de publicação, conteúdo completo e comentários
+- Organização modular das rotas e componentes
+- Suporte a categorias (Filmes, Séries, Quadrinhos, Games)
+- Tratamento de erro
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Tecnologias Utilizadas
 
-## Build
+- Angular 19
+- TypeScript
+- HTML + CSS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## ✅ Funcionalidades Implementadas
 
-## Running unit tests
+- Listagem dinâmica de notícias com:
+  - Título, descrição, imagem, autor e data de publicação
+  - Texto completo formatado em HTML
+  - Categoria (Filmes, Séries, Quadrinhos, Games)
+- Página de detalhe da notícia
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📁 Estrutura do Projeto
 
-## Running end-to-end tests
+```
+src/
+├── app/
+│   ├── components/         → componentes reutilizáveis
+│   ├── pages/              → páginas de listagem e detalhe
+│   └── models/             → interfaces de dados (Article, Comentary)
+├── assets/                 → imagens e estilos
+└── environments/           → variáveis de ambiente
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## ▶️ Como rodar localmente
 
-## Further help
+```bash
+git clone https://github.com/fellipedoprado/angular-blog.git
+cd angular-blog
+npm install
+ng serve
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Acesse no navegador: [http://localhost:4200](http://localhost:4200)
+
+## 📄 Licença
+
+MIT © [Fellipe do Prado Arruda](https://github.com/fellipedoprado)
