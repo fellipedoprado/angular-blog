@@ -9,9 +9,21 @@ import { dataFake } from 'src/app/data/dataFake';
 })
 export class HomeComponent implements OnInit {
   articles = dataFake;
-  articles_other_index = [1, 2];
+  article_main_index: number[] = [];
+  articles_other_index: number[] = [];
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.articles_other_index = this.getRandomIndexes(2, this.articles.length);
+  }
+
+  getRandomIndexes(count: number, max: number): number[] {
+    const indexes = new Set<number>();
+    while (indexes.size < count) {
+      const randomIndex = Math.floor(Math.random() * max);
+      indexes.add(randomIndex);
+    }
+    return Array.from(indexes);
+  }
 }

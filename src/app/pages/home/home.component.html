@@ -2,8 +2,8 @@
 
 <div class="container__articles">
   <div class="articles__main">
-    @if (articles.length > 0) {
-    <app-big-card [article]="articles[0]"></app-big-card>
+    @if (articles.length > 0 && article_main_index.length > 0) {
+    <app-big-card [article]="articles[article_main_index[0]]"></app-big-card>
     } @else { Erro }
   </div>
   <div class="articles__others">
